@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colaboracion Fictional Versus X K.J</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Hola! Haz click aquí para reclamar tu wallpaper exclusivo de la Colaboración</h1>
+    <button onclick="downloadRandomWallpaper()">Vamos!</button>
+    
+    <p><a href="https://kjgames72.github.io/kjgamepage/" target="_blank">Visita la página oficial de KJ Games</a></p>
+    <p><a href="https://www.youtube.com/@rigartur/videos" target="_blank">Suscribete al Canal de Fictional Versus en YouTube</a></p>
+
+    <script>
+        function downloadRandomWallpaper() {
+            // Lista de URLs de los wallpapers
+            const wallpapers = [
+                'Fondo%20tablero.png',
+                'Fondo%20J-Mochila.png',
+                'Fondo%20papaleta.png',
+                'Fondo%20Maquina.png',
+                'Fondo%20coraje.png'
+            ];
+
+            // Selecciona uno al azar
+            const randomIndex = Math.floor(Math.random() * wallpapers.length);
+            const wallpaper = wallpapers[randomIndex];
+
+            // Redirige para descargar
+            window.location.href = wallpaper;
+        }
+    </script>
+</body>
+</html>
+
